@@ -11,7 +11,7 @@ public class OrderController {
 
 	
 	@GetMapping("/index")
-	public String order(@ModelAttribute(name = "loginForm") Order order, Model m) {
+	public String order(@ModelAttribute(name = "index") Order order, Model m) {
 		String firstName = order.getFirstName();
 		String middleName = order.getMiddleName();
 		// do for rest..
@@ -24,7 +24,7 @@ public class OrderController {
 	}
 
 	@PostMapping("/index")
-	public String orderSubmit(@ModelAttribute(name = "loginForm") Order order, Model m) {
+	public String orderSubmit(@ModelAttribute(name = "index") Order order, Model m) {
 		String firstName = order.getFirstName();
 		String middleName = order.getMiddleName();
 		// do for rest..
