@@ -1,7 +1,9 @@
 <body>
 	<h1>Result</h1>
-    <p th:text="'id: ' + ${greeting.id}" />
-    <p th:text="'content: ' + ${greeting.content}" />
-    <a href="/index">Submit another message</a>
- <!-- add this and to the controller too <a href="/AboutYou"> InfoAboutYou</a>  -->  
+    <p th:text="'firstName: ' + ${order.firstName}" />
+    <p th:text="'middleName: ' + ${order.middleName}" />
+    <!-- Do for all the attributes as asked in the qs. -->
+    <a href="/index">Go Back to Home Page</a>
+    
+  
 </body>
